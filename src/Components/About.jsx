@@ -1,8 +1,8 @@
-import AboutImg from '../../Public/aboutImage.png';
-import OurVision from '../../Public/ourVisionImage.png'
-import Mission1 from '../../Public/missions.png'
-import Mission2 from '../../Public/missions.png'
-import Mission3 from '../../Public/missions.png'
+import AboutImg from '../../Public/aboutus.jpg';
+import OurVision from '../../Public/ourvision.jpg'
+import Mission1 from '../../Public/HandsonExp.jpg'
+import Mission2 from '../../Public/SkillDev.jpg'
+import Mission3 from '../../Public/NetworkBuilding.jpg'
 
 export default function About() {
     return (
@@ -13,7 +13,7 @@ export default function About() {
                 {/* About Us Section */}
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row my-10 lg:my-20">
                     {/* Image Parent Window */}
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center lg:max-w-[400px]">
                         <img src={AboutImg} alt="" className="" />
                     </div>
 
@@ -29,7 +29,7 @@ export default function About() {
                 {/* Our visions Section */}
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row-reverse my-10 lg:my-20">
                     {/* Image Parent Window */}
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center lg:max-w-[400px]">
                         <img src={OurVision} alt="" className="" />
                     </div>
 
@@ -53,8 +53,8 @@ export default function About() {
                     <div className="flex flex-col lg:flex-row lg:gap-3">
 
                         {/* mission 1 */}
-                        <div className="mx-auto my-3 lg:my-10">
-                            <img src={Mission1} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                        <div className="my-3 lg:my-10">
+                            <img src={Mission1} alt="" className="w-[200px] md:w-[400px] lg:w-[300px] mx-auto" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -74,8 +74,8 @@ export default function About() {
                             </div>
                         </div>
                         {/* mission 2 */}
-                        <div className="mx-auto my-3 lg:my-10">
-                            <img src={Mission2} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                        <div className="my-3 lg:my-10">
+                            <img src={Mission2} alt="" className="w-[200px] md:w-[400px] lg:w-[300px] mx-auto" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -95,8 +95,8 @@ export default function About() {
                             </div>
                         </div>
                         {/* mission 3 */}
-                        <div className="mx-auto my-3 lg:my-10">
-                            <img src={Mission3} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                        <div className="my-3 lg:my-10">
+                            <img src={Mission3} alt="" className="w-[200px] md:w-[400px] lg:w-[300px] mx-auto" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">

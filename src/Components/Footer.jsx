@@ -42,7 +42,7 @@ function Footer() {
         </div>
       </div>
       <div className='text-center text-white text-sm'>
-        <p>Copyright © 2023 | Melius - The Consulting & Analytics Club of Maharaja Surajmal Institute, Delhi</p>
+        <b>Copyright © 2023 | Melius - The Consulting & Analytics Club of Maharaja Surajmal Institute, Delhi</b>
         <p>melius.cac@gmail.com</p>
         <p>Built by CSI, MSI Chapter</p>
         <p>Special Credits to Team ControlZ</p>
