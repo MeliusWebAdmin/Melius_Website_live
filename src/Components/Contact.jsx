@@ -13,11 +13,17 @@ export default function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+     let Alan={
+      name:"alan",
+      email:"obg",
+      message:"this is the mesage"
+    }
     try {
       // send formData to endpoint
-      const response = await axios.post("/ENDPOINT_CONTACT?", formData);
-      console.log("Response:", response.data);
+      axios.post("/contactus/", Alan).then(res() =>
+        console.log("Response:", response.data))
+      }
+    
   
       // reset formdata after submission
       setFormData({
@@ -119,22 +125,22 @@ export default function Contact() {
                 className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-            <div className="">
-              <label
-                for="message"
-                className="mb-3 block text-base font-medium text-white"
-              >
-                Message
-              </label>
-              <textarea
-                rows="4"
-                name="Message"
-                placeholder="Type your message"
-                onChange={handleChange}
-                value={formData.Message}
-                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
-              ></textarea>
-            </div>
+              <div className="">
+                <label
+                  for="message"
+                  className="mb-3 block text-base font-medium text-white"
+                >
+                  Message
+                </label>
+                <textarea
+                  rows="4"
+                  name="Message"
+                  placeholder="Type your message"
+                  onChange={handleChange}
+                  value={formData.Message}
+                  className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                ></textarea>
+              </div>
             <button
               className=" w-[50%] hover:shadow-form rounded-md bg-blue py-3 px-8 text-base font-semibold text-white outline-none"
               type="submit"
