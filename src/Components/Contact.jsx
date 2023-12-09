@@ -13,16 +13,7 @@ export default function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-     let Alan={
-      name:"alan",
-      email:"obg",
-      message:"this is the mesage"
-    }
-    try {
-      // send formData to endpoint
-      axios.post("/contactus/", Alan).then(res() =>
-        console.log("Response:", response.data))
-      }
+    
     
   
       // reset formdata after submission
@@ -34,10 +25,6 @@ export default function Contact() {
         Message: "",
       });
 
-    } catch (exception) {
-      console.error("Error during submission:", exception);
-
-    }
   };
 
   const handleChange = (event) => {
