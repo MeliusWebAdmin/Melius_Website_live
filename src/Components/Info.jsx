@@ -11,6 +11,8 @@ import Natwest from "../../Public/Natwest-Logo-removebg-preview.png";
 import NITIAyog from "../../Public/NITI-Aayog-logo-removebg-preview.png";
 import SBICard from "../../Public/SBI_card_logo-removebg-preview.png";
 // import Vistara from "../../Public/experiences/VISTARA-LOGO.png"
+import { Link } from "react-router-dom";
+
 
 export default function Info() {
     return (
@@ -35,7 +37,9 @@ export default function Info() {
 
                     {/* Read more button */}
                     <div className="flex my-5">
-                        <button className="bg-blue rounded-full py-3 px-5 font-semibold mx-auto md:text-2xl">Read More</button>
+                        <Link to="/about" className="bg-blue rounded-full py-3 px-5 font-semibold mx-auto md:text-2xl">
+                            Read More    
+                        </Link>
                     </div>
                 </div>
 

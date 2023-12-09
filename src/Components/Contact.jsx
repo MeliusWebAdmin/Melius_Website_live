@@ -1,9 +1,9 @@
-import axios from "axios";
+import api from "../axios.js";
 import { useState, useEffect } from 'react';
 
 export default function Contact() {
 
-  const [ formData, setFormData ] = useState({
+  const [formData, setFormData] = useState({
     Name: "",
     Contact: "",
     Email: "",
@@ -13,9 +13,22 @@ export default function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const obj = {
+      name: "QWE",
+      email: "QWEE",
+      description: "\n" + formData.Message + "\n" + formData.Contact + "\n" + formData.Subject,
+    } 
     
-    
-  
+    try {
+      alert("Submitting your data");
+      
+      api.post(`/contactus/`, obj)
+      .then((res) => {
+          alert("Your message has been submitted");
+          
+        });
+
       // reset formdata after submission
       setFormData({
         Name: "",
@@ -25,14 +38,20 @@ export default function Contact() {
         Message: "",
       });
 
+
+    } catch (exception) {
+      console.error("Error during submission:", exception);
+      alert("Your message was failed to submit ", exception);
+
+    }
   };
 
   const handleChange = (event) => {
-    const { name, value} = event.target;
+    const { name, value } = event.target;
 
     setFormData({
       ...formData,
-      [ name ]: value
+      [name]: value
     });
 
   }
@@ -112,22 +131,22 @@ export default function Contact() {
                 className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-              <div className="">
-                <label
-                  for="message"
-                  className="mb-3 block text-base font-medium text-white"
-                >
-                  Message
-                </label>
-                <textarea
-                  rows="4"
-                  name="Message"
-                  placeholder="Type your message"
-                  onChange={handleChange}
-                  value={formData.Message}
-                  className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
-                ></textarea>
-              </div>
+            <div className="">
+              <label
+                for="message"
+                className="mb-3 block text-base font-medium text-white"
+              >
+                Message
+              </label>
+              <textarea
+                rows="4"
+                name="Message"
+                placeholder="Type your message"
+                onChange={handleChange}
+                value={formData.Message}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+              ></textarea>
+            </div>
             <button
               className=" w-[50%] hover:shadow-form rounded-md bg-blue py-3 px-8 text-base font-semibold text-white outline-none"
               type="submit"
@@ -145,7 +164,7 @@ export default function Contact() {
             className="rounded-xl w-[100%]  lg:w-[500px] h-[450px]"
           ></iframe>
           <h2 className=" hidden lg:block lg:pt-2">
-            Melius - Maharaja Surajmal Institute , Janakuri{" "}
+            Melius - Maharaja Surajmal Institute , Janakpuri{" "}
           </h2>
         </div>
       </div>
