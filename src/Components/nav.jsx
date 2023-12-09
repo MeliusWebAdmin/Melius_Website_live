@@ -130,7 +130,7 @@ export default function Navbar() {
                             </a>
                             <a
                                 href=""
-                                className="bg-black py-2 px-4 rounded-lg"
+                                className="bg-blue py-2 px-4 rounded-lg"
                             >
                                 <li>
                                     <Link to="/contact">Contact Us</Link>
