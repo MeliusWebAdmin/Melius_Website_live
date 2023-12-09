@@ -24,7 +24,7 @@ export default function Team() {
                             backgroundImage: `url('${IMG_URL}/${member.image}')`
                         }}
                         className="relative bg-cover w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                        <div className="absolute bg-black opacity-30 top-[70%] right-[-15%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                        <div className="absolute bg-black/[.6] p-1 top-[70%] right-[-15%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                             <div className="text-center" key={index}>{member.name}</div>
                             <div className="text-blue text-center" key={index}>{member.position}</div>
                             <div className="flex gap-2 justify-center items-center">
