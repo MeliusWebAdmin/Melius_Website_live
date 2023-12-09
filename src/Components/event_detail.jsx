@@ -100,8 +100,7 @@ export default function EventDetail() {
                         </div>
                     </div>
                 </div>
-                {event.pdf_link ? (
-                    <div>
+                   { (event.pdf_link != "") && <div>
                         <h1 className="py-5  text-White text-3xl font-poppins lg:text-4xl font-bold">
                             Event Report
                         </h1>
@@ -112,9 +111,7 @@ export default function EventDetail() {
                             allow="autoplay"
                         ></iframe>
                     </div>
-                ) : (
-                    <div></div>
-                )}
+}
             </div>
         </div>
     );
