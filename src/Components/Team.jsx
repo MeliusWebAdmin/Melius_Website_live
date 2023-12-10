@@ -14,7 +14,7 @@ export default function Team() {
     return (
         <div className="bg-black font-inter px-6 lg:px-24 text-white">
             <h1 className="py-5 pt-24 font-poppins text-3xl lg:text-5xl font-bold border-b-4 border-blue">Meet the team</h1>
-            <div className="py-10 flex flex-wrap gap-10 md:gap-16 lg:gap-28 justify-center">
+            <div className="py-10 flex flex-wrap gap-8 md:gap-8 lg:gap-28 justify-center">
                 {members.map((member, index) => (
                     // rendering only core members
                     member.is_core &&
@@ -23,8 +23,8 @@ export default function Team() {
                         style={{
                             backgroundImage: `url('${IMG_URL}/${member.image}')`
                         }}
-                        className="relative bg-cover w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                        <div className="absolute bg-black/[.6] p-1 top-[70%] right-[-15%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                        className="relative bg-cover  w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] ">
+                        <div className="absolute bg-black/[.6] p-1 top-[80%] right-[-0%] lg:right-[-30%] font-bold font-poppins text-xl lg:text-2xl">
                             <div className="text-center" key={index}>{member.name}</div>
                             <div className="text-blue text-center" key={index}>{member.position}</div>
                             <div className="flex gap-2 justify-center items-center">

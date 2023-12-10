@@ -29,10 +29,10 @@ function Events() {
                         style={{
                             backgroundImage: `url('${IMG_URL}/${event.thumbnail}')`,
                         }}
-                        className={`relative  bg-contain w-[200px] h-[300px] md:w-[300px] md:h-[450px] rounded-lg aspect-[10/15] flex-none`}
+                        className={`relative bg-cover w-[160px] h-[160px] md:w-[300px] md:h-[300px] aspect-square rounded-lg  flex-none`}
                     >
                         {/* Event Text */}
-                        <div className="absolute bg-black bg-opacity-50 p-2 left-2 md:left-4 bottom-2 font-poppins font-bold text-3xl md:text-4xl">
+                        <div className="absolute bg-black  p-1 left-2 md:left-4 bottom-2 font-poppins font-bold text-md md:text-xl">
                             <h1 className="text-blue">{event.title}</h1>
                             <h1>{event.date}</h1>
                         </div>

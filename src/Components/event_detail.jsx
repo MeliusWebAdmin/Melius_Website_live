@@ -24,7 +24,7 @@ export default function EventDetail() {
                     <img
                         src={`${IMG_URL}/${event.thumbnail}`}
                         alt=""
-                        className="w-[200px] lg:w-[500px] aspect-[10/16] rounded-3xl"
+                        className="h-[400px] lg:w-[400px] aspect-square rounded-3xl"
                     />
 
                     <div className="text-lg w-full">
