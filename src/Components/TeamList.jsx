@@ -28,10 +28,10 @@ function TeamList() {
                                 Course
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                LinkedIn
+                                Instagram
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Instagram
+                                LinkedIn
                             </th>
                         </tr>
                     </thead>
