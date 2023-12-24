@@ -127,5 +127,5 @@ Purely static content displaying basic info about Melius, the Read more redirect
 ##
 
 The project was succesfully executed by CSI, MSI Chapter. Developed by Alan K. Sijo, Manan Bhatia & Ishant Sikdar.
-Contact Ishant for more details on `ishant9715@gmail.com`.  
+Contact Ishant for more details on `ishant9715@gmail.com`. Readme by Ishant.
 Readme last updated on: `24 - 12 - 2023`.
