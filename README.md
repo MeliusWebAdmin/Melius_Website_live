@@ -80,7 +80,7 @@ Purely static content displaying basic info about Melius, the Read more redirect
 
 4) **Meet The Team**  
   Filename: `Team.jsx`  
-  This Component renders the Core members dynamically, through the REST API using Axios, the same component is rendered on `Hompage.jsx` & `TeamList.jsx`.
+  This Component renders the Core members dynamically, through the REST API using Axios, the same component is rendered on `Homepage.jsx` & `TeamList.jsx`.
 
 5) **Contact Us**  
   Filename: `Contact.jsx`  
@@ -92,8 +92,17 @@ Purely static content displaying basic info about Melius, the Read more redirect
   Filename: `Footer.jsx`  
   Contains footer related information, rendered statically. Like some SVGs with hyperlinks, etc.
 
-
 ### Other Components
+
+* **NavBar**  
+  Component: `nav.jsx`
+  Contains the navigation bar on the top of the screen and its contents.
+
+* **Landing Page**  
+  Component: `Homepage.jsx`  
+  Renders the entire landing page by rendering many other components.  
+  Those are: `Home.jsx`, `Services.jsx`, `Info.jsx`, `Team.jsx`, `Contant.jsx`  
+
 * **About Us**  
   Component: `About.jsx`  
   Renders static data and images, includes sections like About Us, Our Vision, and Our Missions.  
@@ -122,7 +131,7 @@ Purely static content displaying basic info about Melius, the Read more redirect
 * **Team Members**  
   Component: `TeamList.jsx`  
   This renders the `Team.jsx` component, which renders the Core Members of the club.
-  and also has a Row-Column table, which dynamially renders the details of Non-core Members, i.e, conditional rendering is done in both Team based components, the table only renders their name, course, instagram and linkedin.
+  and also has a Row-Column table, which dynamially renders the details of Non-core Members, i.e, conditional rendering is done in both Team based components, the table only renders their name, course, instagram and linkedin.  
 
 ##
 
