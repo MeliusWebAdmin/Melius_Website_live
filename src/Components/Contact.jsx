@@ -15,8 +15,8 @@ export default function Contact() {
     event.preventDefault();
 
     const obj = {
-      name: "QWE",
-      email: "QWEE",
+      name: "",
+      email: "",
       description: "\n" + formData.Message + "\n" + formData.Contact + "\n" + formData.Subject,
     } 
     
